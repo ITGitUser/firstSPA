@@ -1,0 +1,38 @@
+<div class="title-background">
+  <div class="">
+    Календарь
+  </div>
+</div>
+<table class="table table-condensed table-striped table-bordered">
+  <thead><tr><th>Имя</th><th>Дата</th><th>Время</th><th>Машина</th><th>Сообщение</th></tr></thead>
+  <tbody>
+  </tbody>
+</table>
+<script type="text/javascript">
+  (function($){
+    var row = function (client) {
+      return "<tr><td>" + client.nameClient+ "</td> <td>" + client.dateClient + "</td>" +
+             "<td>" + client.timeClient + "</td><td>" + client.carClient + "</td>"+"<td>" + client.messageClient + "</td>"
+           //"<td><a class='editLink' data-id='" + client._id + "'>Изменить</a> | " +
+           //"<a class='removeLink' data-id='" + client._id + "'>Удалить</a></td></tr>"
+            "</tr>";
+    }
+    // Получение всех заявок
+    function GetRequest() {
+      $.ajax({
+        url: "/reqService",
+        type: "post",
+        contentType: "application/json",
+        success: function (clients) {
+          var rows = "";
+          $.each(clients, function (index, client) {
+            // добавляем полученные элементы в таблицу
+            rows += row(client);
+          });
+          $("table tbody").append(rows);
+        }
+      });
+    };
+        GetRequest();
+        })(jQuery);
+</script>

@@ -1,0 +1,554 @@
+*{
+  margin: 0px;
+  padding:0px;
+}
+html, body {
+  height: 100%;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/*Header css*/
+.header{
+  display: block;
+  height: 85px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.header>.logo{
+  float: left;
+  margin: 8px 0 0 100px;
+  padding-left: 68px;
+  width: 130px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: #101b3d;
+  font-size: 30px;
+  line-height: 24px;
+  background: url(/images/logo-min.png) no-repeat;
+  background-position: left;
+  background-size: 68px;
+  top:0;
+}
+.header>.logo>p{
+  margin-left: -10px;
+  font-size: 10px;
+  line-height: 25px;
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 600;
+}
+.header>.navigation{
+  display: inline-block;
+}
+.header>.navigation>input{
+  background: #fff;
+  border: none;
+  border-top: 5px solid #fff;
+  width: 116px;
+  height: 83px;
+  color: #103b7a;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+.header>.navigation>input:hover{
+  transition: 0.3s;
+  cursor: pointer;
+  border-top: 5px solid #101b3d;
+}
+.request{
+  width: 200px;
+  float: right;
+  margin: 20px 100px 0 0;
+}
+.request>#requestToService{
+  width: 200px;
+  height: 38px;
+  background: #0e98ce;
+  color: #fff;
+  font-family: "Open Sans Bold";
+  border: none;
+  border-bottom: 2px solid #0c729a;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.request>#requestToService:hover{
+  cursor: pointer;
+}
+/*End header css*/
+
+/*Content css*/
+.content{
+ flex: 1 0 auto;
+}
+.reviews{
+  padding: 10px;
+  display: block;
+}
+/*land css*/
+.land{
+  display: block;
+  height: 564px;
+  background: url(/images/landback.jpg) no-repeat;
+}
+.land>.landback{
+  float: right;
+  margin: 160px 80px 0 0;
+  font-size: 35px;
+  font-family: "Open Sans";
+  color: #fff;
+  font-weight: 400;
+}
+.land-info{
+  display: inline-block;
+  width: 364px;
+  height: 564px;
+  background: #0792cae6;
+  margin-left: 70px;
+}
+.land-info>p{
+  margin: 0 20px !important;
+}
+/*End land css*/
+.services{
+  padding: 0 140px 0 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 370px;
+  background: #fff;
+}
+.service-info{
+  height: 80px;
+  flex: 1 0 350px;
+  text-align: center;
+  color: #103b7a;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 20px;
+}
+.service-info:nth-child(1){
+  background: url(/images/paint-min.png) no-repeat;
+  background-position: right;
+  background-size: 78px;
+}
+.service-info:nth-child(2){
+  background: url(/images/engine-min.png) no-repeat;
+  background-position: right;
+  background-size: 78px;
+}
+.service-info:nth-child(3){
+  background: url(/images/tire-min.png) no-repeat;
+  background-position: right;
+  background-size: 78px;
+}
+.service-info:nth-child(4){
+  background: url(/images/transmission-min.png) no-repeat;
+  background-position: right;
+  background-size: 78px;
+}
+.service-info:nth-child(5){
+  background: url(/images/chip-min.png) no-repeat;
+  background-position: right;
+  background-size: 78px;
+}
+.service-info:nth-child(6){
+  background: url(/images/dino-min.png) no-repeat;
+  background-position: right;
+  background-size: 78px;
+}
+.progress{
+  display: flex;
+  height: 170px;
+  background: #e2ecff;
+  padding: 0 60px;
+}
+.progress-info{
+  flex-direction: row;
+  flex-grow: 3;
+  height: 70px;
+  text-align: center;
+  padding: 30px 0;
+  color: #3d4147;
+}
+.progress>.progress-info>span:nth-child(1){
+  color: #258fc5;
+  font-size: 40px;
+  font-family: "Open Sans";
+  font-weight: 800;
+
+}
+.progress>.progress-info>span:nth-child(2){
+  font-size: 30px;
+  font-family: "Open Sans";
+  font-weight: 800;
+}
+.last-news{
+  display: block;
+  padding: 40px;
+}
+.last-news>p{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 350px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 30px;
+  color: #303438;
+  text-transform: uppercase;
+  border-bottom: 2px solid #000;
+}
+.last-news>.wrapp-news{
+  display: flex;
+  padding: 40px;
+  border-top: 2px solid #000;
+}
+.last-news>.wrapp-news>.news-block{
+  flex-grow: 1;
+  flex-direction: row;
+  width: 370px;
+  height: 500px;
+  margin: 20px;
+  background: #113c6f;
+  position: relative;
+}
+.last-news>.wrapp-news>.news-block>.news-img{
+  display: block;
+  width: 370px;
+  height: 208px;
+}
+.last-news>.wrapp-news>.news-block:nth-child(1)>.news-img{
+  background: url(/images/worldCup-min.jpg) no-repeat;
+  background-size: 370px 208px;
+}
+.last-news>.wrapp-news>.news-block:nth-child(2)>.news-img{
+  background: url(/images/2381474357-min.jpg) no-repeat;
+  background-size: 370px 208px;
+}
+.last-news>.wrapp-news>.news-block:nth-child(3)>.news-img{
+  background: url(/images/jason-statham-the-mechanic-movie-image-min.jpg) no-repeat;
+  background-size: 370px 208px;
+}
+.last-news>.wrapp-news>.news-block>.news-info{
+  display: block;
+  height: 32px;
+  background: #2386bd;
+
+
+}
+.last-news>.wrapp-news>.news-block>.news-info>p{
+  color: #dadef4;
+  padding: 6px 20px;
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+.last-news>.wrapp-news>.news-block>.news-text>h1{
+  color: #e1c977;
+  font-family: "Open Sans";
+  line-height: 25px;
+  font-size: 25px;
+  padding: 20px;
+  font-weight: 600;
+}
+.last-news>.wrapp-news>.news-block>.news-text>p{
+  color: #fff;
+  padding: 0 20px;
+}
+.last-news>.wrapp-news>.news-block>input{
+    position: absolute;
+    bottom: 0;
+    border: none;
+    padding: 10px;
+    font-family: Open sans-serif;
+    color: #e1c977;
+    background: none;
+    font-size: 16px;
+    margin: 0 10px 15px 10px;
+    font-weight: 600;
+    border-bottom:  2px solid #113c6f;;
+}
+.last-news>.wrapp-news>.news-block>input:hover{
+  cursor: pointer;
+  border-bottom:  2px solid #e1c977;
+  transition: 0.5s;
+}
+
+/*Reviews css*/
+.title-background{
+  background: url(/images/titlebackground-min.jpg);
+  height: 100px;
+}
+.title-background>div{
+  color: #fff;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 30px;
+  padding: 30px 170px;
+}
+#review{
+  padding: 70px;
+}
+.request-rev{
+  width: 680px;
+  margin: 20px auto;
+}
+[name=text-rev]{
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  width: 370px;
+  height: 42px;
+  color: #878787;
+  font-family: "Open Sans";
+  font-size: 18px;
+  border-radius: 5px;
+}
+[name=sub-rev]{
+  width: 200px;
+  height: 42px;
+  background: #0e98ce;
+  color: #fff;
+  font-family: "Open Sans Bold";
+  border: none;
+  border-bottom: 2px solid #0c729a;
+  font-size: 14px;
+}
+#review>.review>.avatar{
+  display: inline-block;
+  border-radius: 50%;
+  background: #ccc;
+  width: 100px;
+  height: 100px;
+}
+#review>.review>.wrapp-comment{
+  display: inline-block;
+  width: 90%;
+}
+
+#review>.review>.wrapp-comment>.text-comment{
+  padding: 20px;
+  background: #f4f4f4;
+}
+#review>.review:nth-child(2n+1)>.wrapp-comment>.text-comment{
+  border-left: 4px solid #ddd;
+}
+#review>.review>.wrapp-comment>.who-comment{
+    color: #103b7a;
+    padding: 10px;
+}
+#review>.review:nth-child(2n)>.wrapp-comment>.who-comment{
+  text-align: right;
+}
+#review>.review:nth-child(2n)>.wrapp-comment>.text-comment{
+  border-right: 4px solid #ddd;
+  text-align: right;
+}
+
+
+
+/*End reviews css*/
+
+/*Form css*/
+
+.form-wrapp{
+  width: 900px;
+  margin: 20px auto;
+}
+.form-wrapp>form>input, .form-wrapp>form>textarea{
+  border: 1px solid #ddd;
+  color: #878787;
+  font-family: "Open Sans";
+  font-size: 15px;
+  border-radius: 5px;
+}
+.form-wrapp>form>input{
+  width: 370px;
+  margin: 13px;
+  height: 42px;
+  padding: 0 20px;
+}
+.form-wrapp>form>textarea{
+  width: 814px;
+  height: 156px;
+  margin: 13px;
+  padding: 20px;
+}
+.form-wrapp>p{
+  text-align: center;
+  color: #5b5b5b;
+  font-family: "Open Sans";
+  padding: 15px;
+}
+[name=sbmtReqToService]{
+  display: block;
+  width: 154px !important;
+  box-sizing:content-box;
+  border:none !important;
+  background: #0e98ce;
+  color: #fff !important;
+}
+[name=sbmtReqToService]:hover{
+  cursor: pointer;
+  background: #20e66f;
+}
+
+/*End form css*/
+
+/*About css*/
+.about-wrapp{
+  padding: 20px;
+}
+.about-wrapp>.about-block-left{
+  display: block;
+  width: 360px;
+}
+
+/*End about css*/
+
+/*kalendar CSS*/
+#content > table{
+  margin: 0 auto;
+}
+#content > table > thead > tr{
+  background: #113c6f;
+  color: #fff;
+  text-transform: uppercase;
+}
+#content > table > thead > tr > th{
+  font-family: "Open Sans";
+  padding: 8px 16px;
+}
+#content > table > tbody > tr:nth-child(2n+1) > td{
+  padding: 8px 16px;
+  background: #ccc;
+}
+#content > table > tbody > tr:nth-child(2n) > td{
+  padding: 8px 16px;
+  background: #fcfcfc;
+}
+/*End kalendar CSS*/
+
+/*End content css*/
+
+/*Footer css*/
+.footer{
+  flex: 0 0 auto;
+  display: flex;
+  height: 358px;
+  background: #2d343c;
+}
+.footer-block{
+  flex-direction: row;
+  flex-grow: 3;
+  max-width: 450px;
+  padding: 10px;
+}
+.adress-block>p{
+  display: block;
+  color: #dadef4;
+  font-family: "Open Sans";
+}
+.adress-block>p:nth-child(1){
+  border-bottom: 2px solid #dadef4;
+  width: 100px;
+  padding: 50px 0 10px 0;
+  margin: 0 0 0 80px;
+}
+.adress-block>p:nth-child(2){
+  border-top: 2px solid #dadef4;
+  padding: 10px 0 20px 0;
+  margin: 0 0 0 80px;
+}
+.about-block>p{
+  display: block;
+  color: #dadef4;
+  font-family: "Open Sans";
+}
+.about-block>p:nth-child(1){
+  border-bottom: 2px solid #dadef4;
+  width: 200px;
+  padding: 50px 0 10px 0;
+}
+.about-block>p:nth-child(2){
+  border-top: 2px solid #dadef4;
+  padding: 10px 0 20px 0;
+  margin: 0 80px 0 0;
+}
+.subscribe-block>p{
+  color: #dadef4;
+  text-align:center;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 38px;
+  padding: 90px 0 0 0;
+}
+.down{
+  min-height: 74px;
+  background: #113c6f;
+}
+.down>p{
+  color: #99b9e4;
+  padding: 26px;
+  font-family: "Open Sans";
+}
+[name=subscribeEmail]{
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  background: #2d343c;
+  border: none;
+  border-bottom: 2px solid #dadef4;
+  text-align: center;
+  color: #dadef4;
+  padding: 10px;
+}
+[name=subscribeButton]{
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 200px;
+  height: 38px;
+  background: #0e98ce;
+  color: #fff;
+  font-family: "Open Sans";
+  font-weight: 600;
+  border: none;
+  border-bottom: 2px solid #0c729a;
+  font-size: 14px;
+  border-radius: 5px;
+}
+[name=subscribeButton]:hover{
+  cursor: pointer;
+}
+/*End footer css*/
+
+
+/*прелоадер*/
+
+
+.load{position:absolute;top:20%;left:50%;transform:translate(-50%, -50%);
+  /*change these sizes to fit into your project*/
+  width:100px;
+  height:100px;
+}
+.load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
+
+.load :first-child{background:#19A68C;animation-delay:-1.5s}
+.load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+.load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+.load :last-child{background:#193B48}
+
+@keyframes spin{
+  0%,100%{transform:translate(0)}
+  25%{transform:translate(160%)}
+  50%{transform:translate(160%, 160%)}
+  75%{transform:translate(0, 160%)}
+}
+
+/**/

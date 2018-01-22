@@ -1,0 +1,20 @@
+<div class="title-background">
+  <div class="">
+    Оставить заявку
+  </div>
+</div>
+<div class="formReqToService">
+  <div class="form-wrapp">
+    <p>Оставтье свои данные, опишите проблему, укажите желаемую дату и время для того что бы наши специалисты смогли вам помочь в кратчайшие сроки</p>
+    <form id="formReqToService" name="formReqToService">
+      <input type="text" name="nameClient" value="" placeholder="Имя" required>
+      <input type="tel" name="phone_number" placeholder="Ваш номер телефона" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" maxlength="14" required>
+      <input type="email" name="emailClient" value="" placeholder="E-mail"required>
+      <input type="text" name="carClient" value="" placeholder="Ваш автомобиль" required>
+      <input type="date" name="dateClient" value="" placeholder="01/01/2017" required>
+      <input type="time" name="timeClient" value="" placeholder="09:00" required>
+      <textarea name="messageClient" rows="8" cols="80" placeholder="Message"></textarea>
+      <input type="submit" name="sbmtReqToService" value="Отправить">
+    </form>
+  </div>
+</div>
